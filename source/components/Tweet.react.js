@@ -50,8 +50,6 @@ var Tweet = React.createClass({
 			</div>
 		);
 	}
-
-
 });
 
 module.exports = Tweet;
