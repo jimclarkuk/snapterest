@@ -1,7 +1,7 @@
 var React = require('react');
 var SnapkiteStreamClient = require('snapkite-stream-client');
 var StreamTweet = require('./StreamTweet.react');
-var Header = require(./Header.react);
+var Header = require('./Header.react');
 
 var Stream = React.createClass({
 	getInitialState: function() {
@@ -29,7 +29,7 @@ var Stream = React.createClass({
 
 		if (tweet) {
 			return (
-				<StreamTweet tweet={tweet} onAddTweetToCollection={this.props.onAddTweetToCollection}) />
+				<StreamTweet tweet={tweet} onAddTweetToCollection={this.props.onAddTweetToCollection} />
 			);
 		}
 		return (

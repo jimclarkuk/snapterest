@@ -20,7 +20,7 @@ var TweetList = React.createClass({
 		var handleRemoveTweetFromCollection = this.props.onRemoveTweetFromCollection;
 		var tweetElement;
 
-		if (handleTweetRemovedFromCollection){
+		if (handleRemoveTweetFromCollection){
 			tweetElement = (
 				<Tweet tweet={tweet} onImageClick={handleRemoveTweetFromCollection} />
 			);

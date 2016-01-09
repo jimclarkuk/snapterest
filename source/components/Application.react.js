@@ -2,7 +2,7 @@ var React = require('react');
 var Stream = require('./Stream.react');
 var Collection = require('./Collection.react');
 
-var Application = React.creatClass({
+var Application = React.createClass({
 	getInitialState: function() {
 		return {
 			collectionTweets: {}
@@ -41,7 +41,7 @@ var Application = React.creatClass({
 						<Stream onAddTweetToCollection={this.addTweetToCollection} />
 					</div>
 					<div className="col-md-8">
-						<Collection tweets={this.state.collectionTweets} onRemoveTweetFromCollection={this.removeTweetFromCollection} onRemoveAllTweetsFromCollection={this.removeAllTweetsFromCollection}) />
+						<Collection tweets={this.state.collectionTweets} onRemoveTweetFromCollection={this.removeTweetFromCollection} onRemoveAllTweetsFromCollection={this.removeAllTweetsFromCollection} />
 					</div>
 				</div>
 			</div>);

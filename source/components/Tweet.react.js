@@ -28,7 +28,7 @@ var Tweet = React.createClass({
 				return new Error('Tweet must have picture set!');
 			}
 		},
-		onImageClick: React.propTypes.func
+		onImageClick: React.PropTypes.func
 	},
 
 	handleImageClick: function() {

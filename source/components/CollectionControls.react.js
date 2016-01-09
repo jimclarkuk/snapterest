@@ -24,14 +24,14 @@ var CollectionControls = React.createClass({
 
 		return (
 			<span>
-				{text} <strong>{this.stats.name}</strong> collection
+				{text} <strong>{this.state.name}</strong> collection
 			</span>
 			);
 	},
 
 	toggleEditCollectionName: function() {
 		this.setState({
-			isEditingName: !this.state.isEditingName;
+			isEditingName: !this.state.isEditingName
 		});
 	},
 
@@ -60,4 +60,4 @@ var CollectionControls = React.createClass({
 	}
 });
 
-export.modules = CollectionControls;
+module.exports = CollectionControls;
