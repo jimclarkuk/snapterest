@@ -1,4 +1,5 @@
 var React = require('react');
+var Header = require('./Header.react');
 
 var tweetStyle = {
 	position: 'relative',
@@ -47,6 +48,7 @@ var Tweet = React.createClass({
 		return (
 			<div style={tweetStyle}>
 				<img src={tweetMediaUrl} onClick={this.handleImageClick} style={imageStyle} />
+				<Header text={tweet.text}/>
 			</div>
 		);
 	}
